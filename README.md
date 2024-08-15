@@ -11,7 +11,7 @@
   NEXT_PUBLIC_BE_URL={BE URL}
 
 - 2: `npm run install` - cài đặt thư viện
-- 3: `npm run dev` - Chạy dev server
+- 3: `npm run dev` - Chạy dev server - Mặc định chaỵ trên localhost:3000
 
 ## Các bước deploy lên testing/production
 
