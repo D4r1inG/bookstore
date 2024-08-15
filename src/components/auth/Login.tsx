@@ -1,4 +1,5 @@
 import { Button, Form, Input, message } from '@/UI';
+import { APIResponse } from '@/interfaces';
 import { login } from '@/services/books.service';
 import { decodeToken } from '@/utils/functions';
 import React from 'react';
@@ -7,7 +8,9 @@ export const Login = ({ setIsAllowed, setUserInfo }) => {
   const [form] = Form.useForm();
 
   const onFinish = async (values) => {
-    const res = await login(values);
+    const res: APIResponse = await login(values);
+
+    if (!res?.data) return message.error(res?.error || 'Login failed');
 
     message.success('Login successfully');
     localStorage.setItem('token', res?.data.accessToken);
