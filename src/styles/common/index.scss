@@ -1,0 +1,38 @@
+// .ant-btn-primary:not(:disabled):hover
+.ant-btn-primary.gray-btn {
+  background-color: var(--grey-300);
+  border-color: var(--grey-300);
+  color: var(--white);
+}
+
+.ant-btn-primary.gray-btn:not(:disabled):hover,
+.ant-btn-primary.gray-btn:not(:disabled):focus {
+  background-color: var(--grey-200);
+  border-color: var(--grey-200);
+  color: var(--white);
+}
+
+.border-gray-btn {
+  border-color: var(--grey-200);
+  color: var(--grey-400);
+}
+
+.ant-btn-default.border-gray-btn:not(:disabled):hover,
+.ant-btn-default.border-gray-btn:not(:disabled):focus {
+  border-color: var(--grey-200);
+  color: var(--grey-400);
+}
+
+.ant-btn-primary:disabled,
+.ant-btn-default:disabled,
+.ant-btn-default.ant-btn-dangerous:disabled {
+  border-color: var(--grey-100);
+}
+
+.admin-btn {
+  &:hover {
+    div {
+      text-decoration: underline;
+    }
+  }
+}

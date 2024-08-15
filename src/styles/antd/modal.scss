@@ -1,0 +1,23 @@
+.ant-modal .ant-modal-close {
+  top: 0.5rem;
+  color: var(--white);
+}
+
+.ant-modal .ant-modal-header {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  background-color: var(--primary);
+
+  .ant-modal-title {
+    text-align: center;
+  }
+}
+
+.ant-modal .ant-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+// .ant-modal .ant-modal-footer {
+// border-top: 1px solid var(--grey-100);
+// }

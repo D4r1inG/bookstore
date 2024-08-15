@@ -1,0 +1,8 @@
+{
+  "extension": [".js", ".jsx", ".ts", ".tsx"],
+  "include": ["src/**/*.tsx"],
+  "exclude": ["src/pages/api/__coverage__.js", "**/*.d.ts", "setup/**/*.mjs"],
+  "all": true,
+  "sourceMap": true,
+  "instrument": true
+}
